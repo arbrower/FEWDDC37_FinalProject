@@ -25,15 +25,19 @@ html {
 /* BASE STYLES
 /*******************************************/
 
+
+/* **************************MOBILE******************************************** */
+@media (max-width: 599px){
+
 body {
   color: #f0efef;
-  font-size: 26px;
+  font-size: 12px;
   line-height: 1.4;
   color: #606161;
   font-family: 'Merriweather', serif;
   font-weight: 300;
-  margin-left: 50px;
-  margin-right: 50px;
+  width: 100%;
+  margin: auto;
 }
 
 a {
@@ -42,24 +46,9 @@ a {
 
 h3 {
   color: #033048;
-  font-size: 40px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 40px;
-}
-
-blockquote {
-  font-size: 36px;
-  font-weight: 300;
-  font-style: italic;
-  text-align: center;
-  width: 580px;
-  margin: 0 auto;
-}
-
-blockquote span {
-  font-weight: 600;
-  display: block;
-  font-style: normal;
 }
 
 /**************** Colors ************* */
@@ -83,7 +72,223 @@ font-family: 'Oswald', sans-serif; */
 /* Center the container */
 
 .container {
-  width: 960px;
+  width: 100%;
+  margin: auto;
+}
+
+/******************************************
+/* BUTTONS
+/*******************************************/
+
+.button {
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 5px 0;
+  min-width: 180px;
+  font-size: 22px;
+  text-align: center;
+  display: inline-block;
+}
+
+.primary {
+  background: #DEA98A;
+  color: #22221A;
+}
+
+.secondary {
+  background: #22221A;
+  color: #F8E6D9;
+}
+
+/******************************************
+/* HEADER
+/*******************************************/
+
+.logo {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+header {
+  background: #22221A;
+  padding: 15px 0;
+  overflow: hidden;
+}
+
+header .container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+header .logo {
+  color: #DEA98A;
+}
+
+/******************************************
+/* NAV
+/*******************************************/
+
+
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 40px;
+  font-size: 14px;
+}
+
+nav li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  color: #F5E7DD
+}
+
+/******************************************
+/* HERO
+/*******************************************/
+
+.hero {
+  max-height: 599px;
+  background: url(../images/drip_podcast_assets-03.png) no-repeat top center #131e27;
+  background-size: cover;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 22px;
+  color: white;
+  margin: 80px 0 50px;
+  font-weight: 600;
+}
+
+
+/******************************************
+/* BENEFITS
+/*******************************************/
+
+.benefits {
+  text-align: center;
+  padding: 40px 0 40px;
+  background-color: #B1BEC6;
+}
+
+/******************************************
+/* DONATIONS
+/*******************************************/
+
+.donation {
+  text-align: center;
+  padding: 40px 0 40px;
+  background-color: #F6E7DB;
+}
+
+/******************************************
+/* Join
+/*******************************************/
+
+.join {
+  text-align: center;
+  padding: 40px 0 40px;
+  background-color: #B1BEC6;
+}
+
+.join p, {
+/* .benefits ul { */
+  width: 600px;
+}
+
+/******************************************
+/* BOTTOM CTA
+/*******************************************/
+
+.bottom-cta {
+  background: 	#728593;
+  padding: 5px;
+  text-align: center;
+
+}
+
+/******************************************
+/* FOOTER
+/*******************************************/
+
+footer {
+  background: #22221A;
+  padding: 10px;
+  text-align: center;
+}
+
+footer .logo {
+  color: #DEA98A;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 12px;
+  color: #F8E6D9;
+  font-weight: 600;
+}
+
+footer img {
+  color: #F8E6D9;
+}
+
+.social {
+  margin: 0;
+  /* margin-bottom: 25px; */
+  padding: 0;
+  display: inline-flex;
+  list-style-type: none;
+}
+
+.social > li {
+  margin: auto;
+}
+
+}
+
+/* *********************************************Tablet **************************/
+@media (min-width: 600px){
+
+body {
+  color: #f0efef;
+  font-size: 22px;
+  line-height: 1.4;
+  color: #606161;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  width: 100%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  color: #033048;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+.container {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -117,13 +322,13 @@ font-family: 'Oswald', sans-serif; */
 /*******************************************/
 
 .logo {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 800;
 }
 
 header {
   background: #22221A;
-  padding: 25px 0;
+  padding: 20px 0;
   overflow: hidden;
 }
 
@@ -151,7 +356,7 @@ nav ul {
 
 nav li {
   margin-left: 40px;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 nav li:first-child {
@@ -167,18 +372,18 @@ nav a {
 /*******************************************/
 
 .hero {
-  min-height: 700px;
+  max-height: 1200px;
   background: url(../images/drip_podcast_assets-03.png) no-repeat top center #131e27;
   background-size: cover;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   text-align: center;
 }
 
 .hero h2 {
-  font-size: 48px;
+  font-size: 32px;
   color: white;
-  margin: 120px 0 90px;
+  margin: 60px 0 60px;
   font-weight: 600;
 }
 
@@ -189,7 +394,7 @@ nav a {
 
 .benefits {
   text-align: center;
-  padding: 70px 0 70px;
+  padding: 70px 10px;
   background-color: #B1BEC6;
 }
 
@@ -199,7 +404,7 @@ nav a {
 
 .donation {
   text-align: center;
-  padding: 70px 0 70px;
+  padding: 70px 10px;
   background-color: #F6E7DB;
 }
 
@@ -209,110 +414,8 @@ nav a {
 
 .join {
   text-align: center;
-  padding: 70px 0 70px;
+  padding: 70px 10px;
   background-color: #B1BEC6;
-}
-
-.join p,
-/* .benefits ul { */
-  width: 600px;
-}
-
-/******************************************
-/* MAIN
-/*******************************************/
-
-.main {
-  margin-top: 80px;
-}
-
-.main .container {
-  display: flex;
-}
-
-.posts {
-  width: 700px;
-  margin-right: 20px;
-  vertical-align: top;
-}
-
-.sidebar {
-  width: 240px;
-  vertical-align: top;
-}
-
-.post {
-  border-bottom: 1px solid #043049;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
-}
-
-.post h2 {
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 1.3;
-  margin-bottom: 30px;
-}
-
-.post h2 a {
-  color: #043049;
-}
-
-.post img {
-  margin-bottom: 30px;
-}
-
-.post p {
-  font-size: 24px;
-  line-height: 1.333;
-  color: #606161;
-}
-
-.post p:first-of-type:first-letter {
-  float: left;
-  font-size: 80px;
-  line-height: 65px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
-  font-weight: 600;
-}
-
-.readmore {
-  text-align: right;
-  margin-top: 30px;
-}
-
-.readmore a {
-  color: #043049;
-  font-weight: 600;
-}
-
-.sidebar h3 {
-  font-size: 32px;
-  font-weight: 800;
-  margin-bottom: 15px;
-  color: #043049;
-}
-
-.sidebar ul {
-  margin-bottom: 40px;
-}
-
-.sidebar ul li a {
-  color: #043049;
-  font-size: 24px;
-}
-
-.sidebar p {
-  font-size: 22px;
-  line-height: 1.1;
-  margin-bottom: 40px;
-}
-
-.sidebar p a {
-  color: #043049;
-  font-weight: 600;
 }
 
 /******************************************
@@ -362,3 +465,214 @@ footer img {
   margin-left: 26px;
   margin-right: 26px;
 }
+
+}
+
+
+/* ***************************************COMPUTER********************************** */
+
+@media (min-width: 1200px) {
+
+  body {
+    color: #f0efef;
+    font-size: 26px;
+    line-height: 1.4;
+    color: #606161;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    width: 100%;
+    margin: auto;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h3 {
+    color: #033048;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  
+
+  
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+  
+  /******************************************
+  /* BUTTONS
+  /*******************************************/
+  
+  .button {
+    border-radius: 5px;
+    font-weight: 800;
+    padding: 12px 0;
+    min-width: 280px;
+    font-size: 28px;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .primary {
+    background: #DEA98A;
+    color: #22221A;
+  }
+  
+  .secondary {
+    background: #22221A;
+    color: #F8E6D9;
+    font-size: 24px;
+  }
+  
+  /******************************************
+  /* HEADER
+  /*******************************************/
+  
+  .logo {
+    font-size: 48px;
+    font-weight: 800;
+  }
+  
+  header {
+    background: #22221A;
+    padding: 25px 0;
+    overflow: hidden;
+  }
+  
+  header .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  
+  header .logo {
+    color: #DEA98A;
+  }
+  
+  /******************************************
+  /* NAV
+  /*******************************************/
+  
+  
+  
+  nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-left: 40px;
+    font-size: 24px;
+  }
+  
+  nav li:first-child {
+    margin-left: 0;
+  }
+  
+  nav a {
+    color: #F5E7DD
+  }
+  
+  /******************************************
+  /* HERO
+  /*******************************************/
+  
+  .hero {
+    min-height: 700px;
+    background: url(../images/drip_podcast_assets-03.png) no-repeat top center #131e27;
+    background-size: cover;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 48px;
+    color: white;
+    margin: 120px 0 90px;
+    font-weight: 600;
+  }
+  
+  
+  /******************************************
+  /* BENEFITS
+  /*******************************************/
+  
+  .benefits {
+    text-align: center;
+    padding: 70px 0 70px;
+    background-color: #B1BEC6;
+  }
+  
+  /******************************************
+  /* DONATIONS
+  /*******************************************/
+  
+  .donation {
+    text-align: center;
+    padding: 70px 0 70px;
+    background-color: #F6E7DB;
+  }
+  
+  /******************************************
+  /* Join
+  /*******************************************/
+  
+  .join {
+    text-align: center;
+    padding: 70px 0 70px;
+    background-color: #B1BEC6;
+  }
+    
+  /******************************************
+  /* BOTTOM CTA
+  /*******************************************/
+  
+  .bottom-cta {
+    background: 	#728593;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  /******************************************
+  /* FOOTER
+  /*******************************************/
+  
+  footer {
+    background: #22221A;
+    padding: 65px 0 45px;
+    text-align: center;
+  }
+  
+  footer .logo {
+    color: #DEA98A;
+    margin-bottom: 68px;
+  }
+  
+  footer p {
+    font-size: 18px;
+    color: #F8E6D9;
+    font-weight: 600;
+  }
+  
+  footer img {
+    color: #F8E6D9;
+  }
+  
+  .social {
+    margin: 0;
+    margin-bottom: 75px;
+    padding: 0;
+    display: inline-flex;
+    list-style-type: none;
+  }
+  
+  .social > li {
+    margin-left: 26px;
+    margin-right: 26px;
+  }
+  }
