@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="A question tree on where to get your coffee">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>DC Drip: Where Should I go?</title>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:300,400,900|Oswald:300,400' rel='stylesheet' type='text/css'>
+
+  <!-- external CSS link -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body id="decisionTree">
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">About</a>
+          </li>
+          <li>
+            <a href="givingcircle.html">Giving Circle</a>
+          </li>
+          <li class="logo">DC DRIP</li>
+          <li>
+            <a href="#">Cafes</a>
+          </li>
+          <li>
+            <a href="blog.html">Coffee Tours</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="section1">
+    <div class="container">
+      <h2>Where Should I get my coffee?</h2>
+    </div>
+  </section>
+  <section class="spacer">
+    <div class="container"></div>
+  </section>
+
+  <!-- Temperature -->
+
+  <section class="section2" id="temperatureSection">
+    <div class="container">
+      <h3>Do want something hot or cold?</h3>
+      <button class="button primary" id="hot">Hot!</button>
+      <button class="button primary" id="cold">Cold!</button>
+    </div>
+  </section>
+
+  <!-- Milk? -->
+
+  <section class="section3 hide" id="hotMilkSection">
+    <div class="container">
+      <h3>Milk?</h3>
+      <p>or milk alternative...</p>
+      <button class="button secondary" id="hotNoMilk">NO WAY!</button>
+      <button class="button secondary" id="hotYesMilk">BRING IT!</button>
+      <p>HOT</p>
+    </div>
+  </section>
+  <section class="section3 hide" id="coldMilkSection">
+      <div class="container">
+        <h3>Cold "Milk"?</h3>
+        <p>or milk altnative...</p>
+        <button class="button secondary" id="coldNoMilk">NO WAY!</button>
+        <button class="button secondary" id="coldYesMilk">BRING IT!</button>
+        <p>COLD</p>
+      </div>
+    </section>
+
+  <!--HNM Flow-->
+  <section class="section4 hide" id="hotNoMilkSection">
+    <div class="container">
+      <h3>What are you feeling?</h3>
+      <button class="button primary" id="drip">Drip Coffee</button>
+      <button class="button primary" id="espresso">Espresso</button>
+      <button class="button primary" id="pourOver">Pour Over</button>
+      <p>HOT + NO MILK</p>
+    </div>
+  </section>
+
+  <!-- HNM Shops -->
+  <section class="section5 hide" id="hotNoMilkDrip">
+      <div class="container">
+        <h3>Drip be bomb!</h3>
+        <p>Each has a unique atmosphere and brilliant drip coffee.</p>
+        <button class="button secondary">Qualia Coffee</button>
+        <button class="button secondary">La Colombe</button>
+        <button class="button secondary">Swings</button>
+        <p>HOT + NO MILK + DRIP</p>
+      </div>
+    </section>
+    <section class="section5 hide" id="hotNoMilkEspresso">
+        <div class="container">
+          <h3>Get your Espresso on at one of these cafes:</h3>
+          <button class="button secondary">Swings Coffee Roasters</button>
+          <button class="button secondary">La Colombe</button>
+          <button class="button secondary">Vigilante</button>
+          <button class="button secondary">The Wydown</button>
+          <p>HOT + NO MILK + Espresso</p>
+        </div>
+      </section>
+      <section class="section5 hide" id="hotNoMilkPourOver">
+          <div class="container">
+            <h3>Pour Over</h3>
+            <p>Wait. Be Patient. Wait... Now enjoy!</p>
+            <button class="button secondary">The Coffee Bar</button>
+            <button class="button secondary">Vigilante</button>
+            <button class="button secondary">The Wydown</button>
+            <p>HOT + NO MILK + Pour Over</p>
+          </div>
+        </section>
+  <footer>
+    <h4 class="logo">DC Drip</h4>
+
+    <ul class="social">
+      <li>
+        <a href="http://twitter.com/dripdcpodcast" target="blank">
+          <img src="images/twitter.png" alt="Twitter logo">
+        </a>
+      </li>
+      <li>
+        <a href="http://facebook.com/dcdrippodcast" target="blank">
+          <img src="images/facebook.png" alt="Facebook logo">
+        </a>
+      </li>
+    </ul>
+
+    <p class="copyright">Copyright 2018. Relaxr.</p>
+  </footer>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='js/script.js'></script>
+</body>
+
+</html>
